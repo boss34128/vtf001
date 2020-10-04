@@ -29,10 +29,7 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <nuxt-link to="/">Welecome</nuxt-link>
-      <v-btn depressed color="primary" to="/inspire">INSPIRE</v-btn>
-      <v-btn class="ma-2" outlined color="indigo" to="/profile">PROFILE</v-btn>
-      <v-btn class="ma-2" outlined color="#F44336" to="/shop">SHOP</v-btn>
+      <nuxt-link to="/">Home</nuxt-link>
     </v-app-bar>
     <v-main>
       <v-container>
@@ -70,18 +67,8 @@ export default {
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'Music',
           to: '/inspire',
-        },
-        {
-          icon: 'mdi-account-circle',
-          title: 'Profile',
-          to: '/profile',
-        },
-        {
-          icon: 'mdi-chart-bubble',
-          title: 'Shop',
-          to: '/shop',
         },
       ],
       miniVariant: false,
