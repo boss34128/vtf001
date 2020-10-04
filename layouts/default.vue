@@ -72,7 +72,7 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Paxer',
+      title: 'Apple Music',
     }
   },
 }

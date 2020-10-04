@@ -13,59 +13,38 @@
             all of your devices.
           </p>
           <p>
-            For more information on Vuetify, check out the
-            <a
-              href="https://vuetifyjs.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              documentation </a
-            >.
+            Apple Music is better than ever with all‑new features designed to
+            make your music come alive.
           </p>
           <p>
-            If you have questions, please join the official
-            <a
-              href="https://chat.vuetifyjs.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="chat"
-            >
-              discord </a
-            >.
+            Listen Now is the easiest way to play what you love and discover
+            something new.
           </p>
           <p>
-            Find a bug? Report it on the github
-            <a
-              href="https://github.com/vuetifyjs/vuetify/issues"
-              target="_blank"
-              rel="noopener noreferrer"
-              title="contribute"
-            >
-              issue board </a
-            >.
+            Tune in to three live radio stations hosted by artists playing
+            today’s hits, classics, and country.
           </p>
           <p>
-            Thank you for developing with Vuetify and I look forward to bringing
-            more exciting features in the future.
+            Get the full Apple Music experience online.
+            <a
+              href="https://music.apple.com/us/browse"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Apple Music"
+            >
+              Go to music.apple.com </a
+            >.
           </p>
           <div class="text-xs-right">
             <em><small>&mdash; Nuttapong Pakdee 6104101323</small></em>
           </div>
           <hr class="my-3" />
           <a
-            href="https://nuxtjs.org/"
+            href="https://github.com/boss34128/vtf001"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Nuxt Documentation
-          </a>
-          <br />
-          <a
-            href="https://github.com/nuxt/nuxt.js"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Nuxt GitHub
+            GitHub
           </a>
         </v-card-text>
         <v-card-actions>
