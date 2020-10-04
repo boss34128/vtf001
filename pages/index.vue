@@ -2,18 +2,15 @@
   <v-row justify="center" align="center">
     <v-col cols="12" sm="8" md="6">
       <div class="text-center">
-        <logo />
         <vuetify-logo />
       </div>
       <v-card>
-        <v-card-title class="headline">
-          Welcome to the Vuetify + Nuxt.js template
-        </v-card-title>
+        <v-card-title class="headline"> Apple Music </v-card-title>
         <v-card-text>
           <p>
-            Vuetify is a progressive Material Design component framework for
-            Vue.js. It was designed to empower developers to create amazing
-            applications.
+            Stream 70 million songs ad‑free. Download your favorite tracks. Play
+            them offline. Get exclusive playlists and live radio. Listen across
+            all of your devices.
           </p>
           <p>
             For more information on Vuetify, check out the
@@ -52,7 +49,7 @@
             more exciting features in the future.
           </p>
           <div class="text-xs-right">
-            <em><small>&mdash; John Leider</small></em>
+            <em><small>&mdash; Nuttapong Pakdee 6104101323</small></em>
           </div>
           <hr class="my-3" />
           <a
@@ -81,12 +78,10 @@
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
 import VuetifyLogo from '~/components/VuetifyLogo.vue'
 
 export default {
   components: {
-    Logo,
     VuetifyLogo,
   },
 }

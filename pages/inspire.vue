@@ -4,7 +4,7 @@
       <v-flex class="text-center mb-1">
         <img src="/iTunes.png" width="500px" />
         <v-container class="center"
-          ><input type="text" class="datee" v-model="keyword" />
+          ><input type="text" class="chong" v-model="keyword" />
           <button class="button" @click="searchData()">
             Search
           </button></v-container
@@ -13,21 +13,21 @@
     </v-layout>
     <v-row>
       <v-col
-        v-for="list in music"
-        :key="list.trackId"
+        v-for="pang in music"
+        :key="pang.trackId"
         class="d-flex child-flex"
         cols="4"
       >
-        <nuxt-link :to="{ name: 'panglynn-id', params: { id: list } }">
+        <nuxt-link :to="{ name: 'panglynn-id', params: { id: pang } }">
           <v-hover v-slot:default="{ hover }">
             <v-card flat tile class="d-flex" :elevation="hover ? 12 : 2">
               <v-img
-                :src="list.artworkUrl100"
+                :src="pang.artworkUrl100"
                 aspect-ratio="1"
                 class="grey lighten-2 rounded"
               >
                 <p class="font-weight-bold grey" style="color: white">
-                  {{ list.trackName }}
+                  {{ pang.trackName }}
                 </p>
               </v-img>
             </v-card>
@@ -53,7 +53,7 @@ export default {
       console.log(this.keyword)
       axios
         .get(
-          'https://itunes.apple.com/search?term=' + this.keyword + '&limit=3'
+          'https://itunes.apple.com/search?term=' + this.keyword + '&limit=6'
         )
 
         .then((response) => {
@@ -69,9 +69,9 @@ export default {
 
 <style>
 .button {
-  background-color: rgb(151, 228, 252);
+  background-color: rgb(100, 100, 100);
   border: none;
-  color: rgb(17, 0, 255);
+  color: rgb(255, 255, 255);
   padding: 5px 5px 5px 5px;
   text-align: center;
   display: inline-block;
@@ -83,38 +83,20 @@ export default {
   width: 10rem;
 }
 button:hover {
-  color: rgb(222, 140, 255);
+  color: rgb(255, 0, 0);
   border: 0.5px solid rgba(0, 0, 0, 0.664);
   background-color: rgba(0, 0, 0, 0.664);
-}
-.button-a {
-  background-color: rgb(125, 177, 255);
-  border: none;
-  padding: 5px 5px 5px 5px;
-  text-align: center;
-  display: inline-block;
-  margin: 10px 10px;
-  font-size: 2vw;
-  cursor: pointer;
-  border-radius: 15px;
-  border: 0.5px solid rgb(42, 5, 250);
-  width: 15rem;
-}
-button-a:hover {
-  color: rgb(207, 124, 255);
-  border: 0.5px solid rgba(255, 255, 255, 0.664);
-  background-color: rgba(3, 3, 3, 0.664);
 }
 .bo {
   color: white;
   font-size: 50px;
 }
-.datee {
+.chong {
   border-radius: 8px;
   padding: 12px;
   border: 2px solid #000000;
   font-size: 20px;
-  width: 30rem;
+  width: 20rem;
   background-color: white;
 }
 .h {

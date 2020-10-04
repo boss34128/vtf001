@@ -16,7 +16,8 @@
             </v-list-item> </v-card
         ></v-container>
       </v-col>
-      <v-col cols="12">
+      <v-col cols="4"></v-col>
+      <v-col cols="8">
         <v-container class="mx-auto center"
           ><audio controls>
             <source :src="sound" type="audio/mpeg" /></audio
@@ -30,7 +31,7 @@
 export default {
   data() {
     return {
-      lup: this.$route.params.id.artworkUrl30,
+      lup: this.$route.params.id.artworkUrl100,
       music: this.$route.params.id.artistName,
       sound: this.$route.params.id.previewUrl,
     }

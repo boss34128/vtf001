@@ -5,7 +5,6 @@
       :mini-variant="miniVariant"
       :clipped="clipped"
       fixed
-      permanent
       app
     >
       <v-list>
@@ -29,7 +28,6 @@
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
       <v-spacer />
-      <nuxt-link to="/">Home</nuxt-link>
     </v-app-bar>
     <v-main>
       <v-container>
